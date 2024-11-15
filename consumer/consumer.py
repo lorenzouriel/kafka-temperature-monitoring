@@ -22,7 +22,7 @@ consumer = Consumer(consumer_conf)
 consumer.subscribe(['marketing-project'])
 
 # Configuração do PostgreSQL
-db_url = "postgresql://postgres_kafka_user:UQ4PAxSQbukeWVcFEDpdNquS6zhbt8zs@dpg-cq8vi35ds78s7396a4og-a.oregon-postgres.render.com/postgres_kafka_sink"
+db_url = ""
 engine = create_engine(db_url)
 
 def consume_messages():
