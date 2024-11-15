@@ -56,6 +56,6 @@ if __name__ == '__main__':
         temperature = generate_temperature(initial_data['temperature_range'])
         data = initial_data.copy()
         data['temperature'] = temperature
-        producer.produce('marketing-project', key=str(producer_id), value=json.dumps(data), callback=delivery_report)
+        producer.produce('monitoring-refrigerator-project', key=str(producer_id), value=json.dumps(data), callback=delivery_report)
         producer.poll(1)
         time.sleep(5)

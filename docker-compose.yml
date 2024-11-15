@@ -10,7 +10,7 @@ services:
       - TOPIC_NAME=${TOPIC_NAME}
       - PRODUCER_ID=${PRODUCER_ID}
     deploy:
-      replicas: 50
+      replicas: 10
 
   consumer:
     build: ./consumer
